@@ -19,37 +19,8 @@ JLabel Q = new JLabel("<html><span style='font-size:10px'>"+" Are you a client r
 Q.setBounds(50, 90, 500, 100);
 
 
-
-
-JButton b = new JButton("Client");
-b.setBounds(200,250,85,20);
-JButton c = new JButton("Owner");
-
-c.setBounds(200,200,85,20);
-
-b.addActionListener(new ActionListener(){  
-	public void actionPerformed(ActionEvent e){  
-	
-		  if(e.getSource()==b) {
-			  ClientButton window= new ClientButton();
-		  }
-    }  
-});  
-
-
-
-c.addActionListener(new ActionListener(){  
-	public void actionPerformed(ActionEvent e){  
-		  if(e.getSource()==c) {
-			  OwnerButton window= new OwnerButton();
-		  }  
-    }  
-	});  
-
-frame.add(c);
 //frame.add(field1);
 frame.add(W);
-frame.add(b);
 frame.add(Q);
 frame.setLayout(null);
 frame.setVisible(true);
